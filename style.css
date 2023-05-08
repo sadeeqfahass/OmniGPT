@@ -101,10 +101,20 @@ body {
     position: relative;
 }
 
+.first,
+.second {
+    width: 100%;
+}
+
+.first .image,
+.second .image {
+    width: 80%;
+}
+
 .first .image .background {
     background: yellow;
     height: 5rem;
-    width: 20rem;
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -145,7 +155,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 6rem;
-    width: 20rem;
+    width: 100%;
     border-radius: 3rem;
     position: relative;
 }
@@ -177,7 +187,7 @@ body {
     align-items: center;
     padding: 3rem 1.5rem;
     height: 5rem;
-    width: 27rem;
+    width: 100%;
     border-radius: 3rem 3rem 3rem 0;
 }
 
@@ -223,7 +233,7 @@ body {
 }
 
 .third .bottom .left img {
-    width: 100%;
+    width: 85%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -236,4 +246,33 @@ body {
     height: 6rem;
     width: 6rem;
     border-radius: 3rem 3rem 3rem 0;
+}
+
+
+@media (max-width:768px) {
+    .nav .links {
+        display: none;
+    }
+
+    .header {
+        flex-direction: column-reverse;
+    }
+
+    .header .right,
+    .header .left {
+        width: 100%;
+    }
+
+    .header .collection .first {
+        margin-top: 3rem;
+    }
+
+    .header .collection .first .image .background img {
+        width: 70%;
+    }
+
+    .header .collection .second,
+    .header .collection .third {
+        display: none;
+    }
 }
