@@ -14,7 +14,7 @@ body {
 }
 
 .nav {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,18 +31,18 @@ body {
 }
 
 .nav .links ul li:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .header {
     display: flex;
     gap: 3rem;
     align-items: center;
+    margin-top: 3rem;
 }
 
 .header .right {
     width: 50%;
-    /* background: orangered; */
 }
 
 .header .right .heading {
@@ -52,7 +52,7 @@ body {
 
 .header .right .sub-heading {
     font-size: 1.5rem;
-    margin: .7rem 0;
+    margin: 1rem 0;
 }
 
 .header .right .desc {
@@ -75,14 +75,165 @@ body {
     color: #fff;
     border-radius: .2rem;
     cursor: pointer;
+    margin-top: 1.5rem;
 }
 
 .header .left {
     width: 50%;
-    margin-left: 6rem;
-    /* background: orange; */
+    margin: 2rem 0 0 6rem;
 }
 
-.header .left img {
-    width: 90%;
+
+.collection {
+    /* background: darkcyan; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first, 
+.second {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.first .image .background {
+    background: yellow;
+    height: 5rem;
+    width: 20rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 2.5rem 0 2.5rem 2.5rem;
+    position: relative;
+}
+
+.first .image .background img {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    border-radius: 0 0 0 2.5rem;
+}
+
+.first .arrow .con {
+    background: #7f3dd2;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.first .arrow .con i {
+    font-size: 4rem;
+    transform: rotate(50deg);
+}
+
+.second {
+    margin: 2.5rem 0;
+}
+
+.second .image .background {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 20rem;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.second .image .background img {
+    position: absolute;
+    bottom: 0;
+}
+
+.second .arrow .con {
+    background: #1FC77E;
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.second .arrow .con i {
+    font-size: 4rem;
+    transform: rotate(-50deg);
+}
+
+.third .top {
+    background: #7f3dd2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    height: 5rem;
+    width: 27rem;
+    border-radius: 3rem 3rem 3rem 0;
+}
+
+.third .top .text {
+    width: 55%;
+}
+
+.third .top .text p  {
+    font-weight: 300;
+}
+
+.third .top .text p span {
+    font-weight: 500;
+}
+
+.third .top .text p .time {
+    float: right;
+    font-size: .7rem;
+    color: #bbb;
+}
+
+.third .top .text p .time i {
+    color: #3497F9;
+}
+
+.third .bottom {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.third .bottom .left {
+    background: #1FC77E;
+    width: 70%;
+    height: 6.5rem;
+    margin-top: 2rem;
+    margin-left: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.third .bottom .left img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-radius: 3rem 0 3rem 3rem;
+}
+
+.third .bottom .right {
+    background: yellow;
+    /* margin-top: 3rem; */
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem 3rem 3rem 0;
 }
