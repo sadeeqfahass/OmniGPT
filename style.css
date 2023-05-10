@@ -269,7 +269,6 @@ body {
 
 .solution .left .phone-con {
   position: relative;
-  /* z-index: 10; */
 }
 
 .solution .left .phone-con .phone-img {
@@ -365,7 +364,7 @@ body {
 }
 
 .solution .right .cards .card {
-    background: #2c2c2c;
+    background: #414651;
     margin-top: 2rem;
     padding: 1rem;
     width: 80%;
@@ -397,18 +396,31 @@ body {
 }
 
 .reviews {
-    margin-top: 10rem;
+    margin: 10rem 5rem 0;
 }
 
 .reviews .heading {
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 3rem;
-    width: 40%;
+    width: 50%;
 }
 
 .reviews .heading span {
     color: #1fc77e;
+}
+
+.reviews .review-cards {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.reviews .review-cards .card {
+    background: #414651;
+    padding: 2.5rem;
+    border-radius: .5rem;
 }
 
 @media (max-width: 790px) {
