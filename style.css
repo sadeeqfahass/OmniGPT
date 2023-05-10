@@ -116,7 +116,7 @@ body {
 }
 
 .first .image .background {
-  background: #FEEA00;
+  background: #feea00;
   height: 5rem;
   width: 100%;
   display: flex;
@@ -245,7 +245,7 @@ body {
 }
 
 .third .bottom .right {
-  background: #FEEA00;
+  background: #feea00;
   /* margin-top: 3rem; */
   height: 6rem;
   width: 6rem;
@@ -261,7 +261,6 @@ body {
 
 .solution .left {
   width: 50%;
-  /* background: #3497F9; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -297,38 +296,38 @@ body {
 }
 
 .solution .left .phone-con .messenger img {
-    width: 50%;
+  width: 50%;
 }
 
 .solution .left .phone-con .whatsapp {
-    width: 7rem;
-    height: 7rem;
-    bottom: 3.5rem;
-    right: -3.5rem;
+  width: 7rem;
+  height: 7rem;
+  bottom: 3.5rem;
+  right: -3.5rem;
 }
 
 .solution .left .phone-con .whatsapp img {
-    width: 70%;
+  width: 70%;
 }
 
 .solution .left .phone-con .yellow,
 .solution .left .phone-con .green {
-    width: 5rem;
-    height: 5rem;
-    position: absolute;
-    border-radius: 3rem 3rem 3rem 0;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  border-radius: 3rem 3rem 3rem 0;
 }
 
 .solution .left .phone-con .yellow {
-    background: #FEEA00;
-    top: 8rem;
-    right: -4rem;
+  background: #feea00;
+  top: 8rem;
+  right: -4rem;
 }
 
 .solution .left .phone-con .green {
-    background: #1fc77e;
-    bottom: 9rem;
-    left: -4rem;
+  background: #1fc77e;
+  bottom: 9rem;
+  left: -4rem;
 }
 
 .solution .right {
@@ -336,121 +335,149 @@ body {
 }
 
 .solution .right .text .heading {
-    font-size: 2.5rem;
-    font-weight: 300;
-    width: 90%;
+  font-size: 2.5rem;
+  font-weight: 300;
+  width: 90%;
 }
 
 .solution .right .text .heading span {
-    color: #1fc77e;
+  color: #1fc77e;
 }
 
 .solution .right .cards .card:first-child {
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fff;
-    color: #000;
-    margin-top: 2rem;
-    padding: 1rem;
-    border-radius: .5rem;
-    cursor: pointer;
+  background: #fff;
+  color: #000;
 }
 
 .solution .right .cards .card:first-child .text .desc,
-.solution .right .cards .card:first-child img{
-    display: block;
+.solution .right .cards .card:first-child img {
+  display: block;
 }
 
 .solution .right .cards .card {
-    background: #414651;
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 80%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: .5rem;
-    cursor: pointer;
+  background: #414651;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
 }
 
 .solution .right .cards .card .text .title {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .solution .right .cards .card .text .desc {
-    font-size: .8rem;
-    display: none;
+  font-size: 0.8rem;
+  display: none;
 }
 
 .solution .right .cards .card img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 17%;
-    padding: .5rem;
-    background: #1fc77e;
-    border-radius: .5rem;
-    display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17%;
+  padding: 0.5rem;
+  background: #1fc77e;
+  border-radius: 0.5rem;
+  display: none;
 }
 
 .reviews {
-    margin: 10rem 5rem 0;
+  margin: 10rem 5rem 0;
+  padding-bottom: 3rem;
+  position: relative;
 }
 
 .reviews .heading {
-    font-size: 2.5rem;
-    font-weight: 300;
-    margin-bottom: 3rem;
-    width: 50%;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+  width: 50%;
 }
 
 .reviews .heading span {
-    color: #1fc77e;
+  color: #1fc77e;
+}
+
+.reviews .star {
+  position: absolute;
+  width: 150px;
+}
+
+.reviews .yellow {
+  top: -5%;
+  right: 20%;
+}
+
+.reviews .purple {
+  top: 10%;
+  right: 10%;
 }
 
 .reviews .review-cards {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .reviews .review-cards .card {
-    width: 50%;
-    background: #414651;
-    padding: 3.5rem;
-    border-radius: .5rem;
+  width: 50%;
+  background: #414651;
+  padding: 3.5rem;
+  border-radius: 0.5rem;
 }
 
 .reviews .review-cards .card .stars {
-    color: #fed400;
-    font-size: 1.5rem;
-    display: flex;
-    gap: .5rem;
-    margin-bottom: 1.5rem;
+  color: #fed400;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .reviews .review-cards .card .title {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .reviews .review-cards .card .review-text {
-    font-size: .7rem;
-    line-height: 1.7;
-    font-weight: 100;
+  font-size: 0.7rem;
+  line-height: 1.7;
+  font-weight: 100;
 }
 
 .reviews .review-cards .card .user {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.reviews .dots-con {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.reviews .dots-con .dot {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #414651;
+}
+
+.reviews .dots-con .dot:first-child {
+  background: #fff;
 }
 
 .reviews .review-cards .card .user p {
-    font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 790px) {
@@ -486,5 +513,18 @@ body {
   .header .collection .second,
   .header .collection .third {
     display: none;
+  }
+
+  .solution {
+    flex-direction: column-reverse;
+  }
+
+  .solution .right {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .solution .right .cards .card {
+    width: 100%;
   }
 }
