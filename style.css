@@ -418,9 +418,39 @@ body {
 }
 
 .reviews .review-cards .card {
+    width: 50%;
     background: #414651;
-    padding: 2.5rem;
+    padding: 3.5rem;
     border-radius: .5rem;
+}
+
+.reviews .review-cards .card .stars {
+    color: #fed400;
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.reviews .review-cards .card .title {
+    margin-bottom: 1rem;
+}
+
+.reviews .review-cards .card .review-text {
+    font-size: .7rem;
+    line-height: 1.7;
+    font-weight: 100;
+}
+
+.reviews .review-cards .card .user {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.reviews .review-cards .card .user p {
+    font-size: .8rem;
 }
 
 @media (max-width: 790px) {
