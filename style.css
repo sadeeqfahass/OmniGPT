@@ -90,7 +90,6 @@ body {
 }
 
 .collection {
-  /* background: darkcyan; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -490,6 +489,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 10;
 }
 
 .cta .left {
@@ -510,6 +511,65 @@ body {
     background: #000;
     color: #fff;
     border-radius: .2rem;
+}
+
+.footer {
+    background: #000;
+    padding: 12rem 5rem 4rem;
+    margin-top: -7rem;
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.footer .logo {
+    color: red;
+}
+
+.footer .footer-first,
+.footer .footer-second {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-weight: 300;
+}
+
+.footer .footer-second p:first-child {
+    color: #1fc77e;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: .2rem;
+}
+.footer .newsletter p{
+    font-weight: 200;
+    margin-bottom: .7rem;
+}
+
+.footer .newsletter .email-con {
+    position: relative;
+}
+
+.footer .newsletter .email-con input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    padding: .7rem;
+    border: 1px solid #414651;
+    border-radius: .3rem;
+    caret-color: #1fc77e;
+    color: #fff;
+}
+
+.footer .newsletter .email-con input:focus {
+    outline: none;
+}
+
+.footer .newsletter .email-con i {
+    position: absolute;
+    right: .7rem;
+    top: .7rem;
+    color: #1fc77e;
 }
 
 @media (max-width: 790px) {
