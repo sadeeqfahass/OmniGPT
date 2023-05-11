@@ -76,8 +76,8 @@ body {
 .header .right .header-btn {
   all: unset;
   background: #1fc77e;
-  padding: 0.5rem 1rem;
-  font-size: 0.7rem;
+  padding: 1.2rem;
+  font-size: 1rem;
   color: #fff;
   border-radius: 0.2rem;
   cursor: pointer;
@@ -130,6 +130,7 @@ body {
   width: 70%;
   position: absolute;
   bottom: 0;
+  left: 15%;
   z-index: 10;
   border-radius: 0 0 0 2.5rem;
 }
@@ -505,82 +506,115 @@ body {
 }
 
 .cta .left h1 span {
-    color: #000;
+  color: #000;
 }
 
 .cta .right button {
-    all: unset;
-    padding: .7rem;
-    background: #000;
-    color: #fff;
-    border-radius: .4rem;
+  all: unset;
+  padding: 0.7rem;
+  background: #000;
+  color: #fff;
+  border-radius: 0.4rem;
 }
 
 .footer {
-    background: #000;
-    padding: 12rem 5rem 4rem;
-    margin-top: -7rem;
-    display: flex;
-    gap: 1rem;
-    align-items: start;
-    justify-content: space-between;
+  background: #000;
+  padding: 12rem 5rem 4rem;
+  margin-top: -7rem;
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .footer .logo {
-    color: red;
+  color: red;
 }
 
 .footer .center-con {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: start;
-    margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 2rem;
 }
 
 .footer .center-con .footer-first,
 .footer .center-con .footer-second {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-weight: 300;
 }
 
 .footer .center-con .footer-second p:first-child {
-    color: #1fc77e;
-    text-transform: uppercase;
-    font-weight: 400;
-    letter-spacing: .2rem;
+  color: #1fc77e;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
 }
-.footer .newsletter p{
-    font-weight: 200;
-    margin-bottom: .7rem;
+.footer .newsletter p {
+  font-weight: 200;
+  margin-bottom: 0.7rem;
 }
 
 .footer .newsletter .email-con {
-    position: relative;
+  position: relative;
 }
 
 .footer .newsletter .email-con input {
-    width: 100%;
-    background: transparent;
-    border: none;
-    padding: .7rem;
-    border: 1px solid #414651;
-    border-radius: .3rem;
-    caret-color: #1fc77e;
-    color: #fff;
+  width: 100%;
+  background: transparent;
+  border: none;
+  padding: 0.7rem;
+  border: 1px solid #414651;
+  border-radius: 0.3rem;
+  caret-color: #1fc77e;
+  color: #fff;
 }
 
 .footer .newsletter .email-con input:focus {
-    outline: none;
+  outline: none;
 }
 
 .footer .newsletter .email-con i {
-    position: absolute;
-    right: .7rem;
-    top: .7rem;
-    color: #1fc77e;
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+  color: #1fc77e;
+}
+
+@media (max-width: 580px) {
+  .nav {
+    padding: 2rem 1rem;
+  }
+
+  .header {
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+
+  .header .right,
+  .header .left {
+    width: 100%;
+  }
+
+  .header .right .header-btn {
+    width: 90%;
+  }
+
+  .header .collection .first {
+    margin-top: 0;
+  }
+
+  .solution {
+    padding: 1rem;
+    margin-top: 0;
+  }
+
+  .reviews .review-cards {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 790px) {
@@ -605,18 +639,18 @@ body {
     width: 100%;
   }
 
-  .header .collection .first {
-    margin-top: 4.5rem;
+  .header .left {
+    margin: 2rem 0 0;
   }
 
-  .header .collection .first .image .background img {
-    width: 70%;
+  .header .collection .first {
+    margin-top: 4.5rem;
   }
 
   .header .collection .second,
   .header .collection .third {
     display: none;
-  }
+  } 
 
   .solution {
     flex-direction: column-reverse;
