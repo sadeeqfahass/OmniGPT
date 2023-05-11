@@ -398,6 +398,8 @@ body {
   font-weight: 300;
   margin-bottom: 3rem;
   width: 50%;
+  position: relative;
+  z-index: 10;
 }
 
 .reviews .heading span {
@@ -411,12 +413,12 @@ body {
 
 .reviews .yellow {
   top: -5%;
-  right: 20%;
+  right: 10%;
 }
 
 .reviews .purple {
   top: 10%;
-  right: 10%;
+  right: 5%;
 }
 
 .reviews .review-cards {
@@ -487,6 +489,7 @@ body {
   margin: 0 8.5rem;
   border-radius: 0.5rem;
   display: flex;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -507,10 +510,10 @@ body {
 
 .cta .right button {
     all: unset;
-    padding: .5rem 1rem;
+    padding: .7rem;
     background: #000;
     color: #fff;
-    border-radius: .2rem;
+    border-radius: .4rem;
 }
 
 .footer {
@@ -527,15 +530,23 @@ body {
     color: red;
 }
 
-.footer .footer-first,
-.footer .footer-second {
+.footer .center-con {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2rem;
+}
+
+.footer .center-con .footer-first,
+.footer .center-con .footer-second {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     font-weight: 300;
 }
 
-.footer .footer-second p:first-child {
+.footer .center-con .footer-second p:first-child {
     color: #1fc77e;
     text-transform: uppercase;
     font-weight: 400;
@@ -618,5 +629,39 @@ body {
 
   .solution .right .cards .card {
     width: 100%;
+  }
+
+  .reviews {
+    margin: 10rem 0;
+    padding: 0 2rem;
+  }
+
+  .reviews .heading {
+    width: 80%;
+  }
+
+  .reviews .review-cards {
+    overflow: hidden;
+  }
+
+  .reviews .review-cards .card {
+    width: 100%;
+  }
+
+  .cta {
+    flex-direction: column;
+  }
+
+  .cta .left {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer .newsletter {
+    display: none;
   }
 }
