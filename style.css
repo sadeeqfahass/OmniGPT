@@ -537,7 +537,6 @@ body {
 }
 
 .footer .center-con {
-  width: 100%;
   display: flex;
   gap: 10rem;
   justify-content: center;
@@ -656,10 +655,15 @@ body {
 
   .footer {
     padding: 12rem 1.5rem 4rem;
+    flex-direction: column;
   }
 
   .footer .center-con {
     flex-direction: column;
+  }
+
+  .footer .newsletter {
+    display: none;
   }
 }
 
@@ -702,13 +706,5 @@ body {
   .cta .left {
     width: 100%;
     text-align: center;
-  }
-
-  .footer {
-    flex-direction: column;
-  }
-
-  .footer .newsletter {
-    display: none;
   }
 }
