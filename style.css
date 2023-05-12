@@ -38,6 +38,10 @@ body {
   display: none;
 }
 
+.nav .menu i {
+  font-size: 2rem;
+}
+
 .header {
   display: flex;
   gap: 3rem;
@@ -587,11 +591,20 @@ body {
 }
 
 @media (max-width: 580px) {
-  .nav {
+  /* .nav {
     padding: 2rem 1rem;
+  } */
+
+  .nav .links {
+    display: none;
+  }
+
+  .nav .menu {
+    display: block;
   }
 
   .header {
+    flex-direction: column-reverse;
     padding: 0 1rem;
     margin-top: 0;
   }
@@ -612,6 +625,7 @@ body {
   .solution {
     padding: 1rem;
     margin-top: 0;
+    flex-direction: column-reverse;
   }
 
   .solution .right .cards .card:first-child img {
@@ -631,6 +645,7 @@ body {
   }
 
   .cta {
+    flex-direction: column;
     margin: 0 2rem;
     padding: 2rem 1rem;
   }
@@ -649,27 +664,6 @@ body {
 }
 
 @media (max-width: 790px) {
-  .nav .links {
-    display: none;
-  }
-
-  .nav .menu {
-    display: block;
-  }
-
-  .nav .menu i {
-    font-size: 2rem;
-  }
-
-  .header {
-    flex-direction: column-reverse;
-  }
-
-  .header .right,
-  .header .left {
-    width: 100%;
-  }
-
   .header .left {
     margin: 2rem 0 0;
   }
@@ -681,10 +675,6 @@ body {
   .header .collection .second,
   .header .collection .third {
     display: none;
-  } 
-
-  .solution {
-    flex-direction: column-reverse;
   }
 
   .solution .right {
@@ -707,10 +697,6 @@ body {
 
   .reviews .review-cards .card {
     width: 100%;
-  }
-
-  .cta {
-    flex-direction: column;
   }
 
   .cta .left {
