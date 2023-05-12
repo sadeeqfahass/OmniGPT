@@ -535,8 +535,8 @@ body {
 .footer .center-con {
   width: 100%;
   display: flex;
-  gap: 2rem;
-  justify-content: space-between;
+  gap: 10rem;
+  justify-content: center;
   align-items: start;
   margin-top: 2rem;
 }
